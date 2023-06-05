@@ -1,3 +1,38 @@
+<<<<<<< HEAD
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Giá</th>
+        <th>Ảnh</th>
+        <th>Mô tả</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let product of products; index as i">
+        <td>{{i+1}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>
+          <img [src]="product.img" />
+        </td>
+        <td>{{product.description}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeItem(product.id)">Xóa</button>
+          <button class="btn btn-danger">
+            <a style="color: rgb(255, 0, 0); text-decoration: none; display:block;"
+              routerLink="{{product.id}}/update">Sửa</a>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+=======
 <a href="admin/product/add">thêm sản phẩm</a>
 <table>
 	<thead>
@@ -23,3 +58,4 @@
 		<!-- Thêm các hàng khác tương tự -->
 	</tbody>
 </table>
+>>>>>>> 073b5d968cad4c90c2a92039f8178d74cbf7b0de

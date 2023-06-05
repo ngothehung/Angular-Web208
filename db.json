@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "name": "abc update 12",
+      "price": 9999,
+      "img": "https://picsum.photos/200/200",
+      "description": "mo ta update",
+      "id": 1
+    }
+  ]
+}
